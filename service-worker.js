@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "rubenverster.github.io/cookiecrumblenews/precache-manifest.388b7d95c86138efa15aac6b8687e8a7.js"
+  "rubenverster.github.io/CookieCrumbleNews/precache-manifest.d77130ad6f98eb7269c9af64650b6330.js"
 );
 
 self.addEventListener('message', (event) => {
@@ -33,7 +33,7 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("rubenverster.github.io/cookiecrumblenews/index.html"), {
+workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("rubenverster.github.io/CookieCrumbleNews/index.html"), {
   
   blacklist: [/^\/_/,/\/[^\/?]+\.[^\/]+$/],
 });

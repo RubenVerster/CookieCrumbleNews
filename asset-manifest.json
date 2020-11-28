@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "rubenverster.github.io/cookiecrumblenews/static/css/main.04f19bf9.chunk.css",
-    "main.js": "rubenverster.github.io/cookiecrumblenews/static/js/main.1fea1f8f.chunk.js",
-    "main.js.map": "rubenverster.github.io/cookiecrumblenews/static/js/main.1fea1f8f.chunk.js.map",
-    "runtime~main.js": "rubenverster.github.io/cookiecrumblenews/static/js/runtime~main.5e79e425.js",
-    "runtime~main.js.map": "rubenverster.github.io/cookiecrumblenews/static/js/runtime~main.5e79e425.js.map",
-    "static/css/2.cbf93631.chunk.css": "rubenverster.github.io/cookiecrumblenews/static/css/2.cbf93631.chunk.css",
-    "static/js/2.8db25c1d.chunk.js": "rubenverster.github.io/cookiecrumblenews/static/js/2.8db25c1d.chunk.js",
-    "static/js/2.8db25c1d.chunk.js.map": "rubenverster.github.io/cookiecrumblenews/static/js/2.8db25c1d.chunk.js.map",
-    "index.html": "rubenverster.github.io/cookiecrumblenews/index.html",
-    "precache-manifest.388b7d95c86138efa15aac6b8687e8a7.js": "rubenverster.github.io/cookiecrumblenews/precache-manifest.388b7d95c86138efa15aac6b8687e8a7.js",
-    "service-worker.js": "rubenverster.github.io/cookiecrumblenews/service-worker.js",
-    "static/css/2.cbf93631.chunk.css.map": "rubenverster.github.io/cookiecrumblenews/static/css/2.cbf93631.chunk.css.map",
-    "static/css/main.04f19bf9.chunk.css.map": "rubenverster.github.io/cookiecrumblenews/static/css/main.04f19bf9.chunk.css.map",
-    "static/media/App.css": "rubenverster.github.io/cookiecrumblenews/static/media/background.1b9c5db8.jpg",
-    "static/media/font-awesome.min.css": "rubenverster.github.io/cookiecrumblenews/static/media/fontawesome-webfont.fee66e71.woff"
+    "main.css": "rubenverster.github.io/CookieCrumbleNews/static/css/main.74f2fdb6.chunk.css",
+    "main.js": "rubenverster.github.io/CookieCrumbleNews/static/js/main.3e8ba008.chunk.js",
+    "main.js.map": "rubenverster.github.io/CookieCrumbleNews/static/js/main.3e8ba008.chunk.js.map",
+    "runtime~main.js": "rubenverster.github.io/CookieCrumbleNews/static/js/runtime~main.dba4324d.js",
+    "runtime~main.js.map": "rubenverster.github.io/CookieCrumbleNews/static/js/runtime~main.dba4324d.js.map",
+    "static/css/2.d2104beb.chunk.css": "rubenverster.github.io/CookieCrumbleNews/static/css/2.d2104beb.chunk.css",
+    "static/js/2.8db25c1d.chunk.js": "rubenverster.github.io/CookieCrumbleNews/static/js/2.8db25c1d.chunk.js",
+    "static/js/2.8db25c1d.chunk.js.map": "rubenverster.github.io/CookieCrumbleNews/static/js/2.8db25c1d.chunk.js.map",
+    "index.html": "rubenverster.github.io/CookieCrumbleNews/index.html",
+    "precache-manifest.d77130ad6f98eb7269c9af64650b6330.js": "rubenverster.github.io/CookieCrumbleNews/precache-manifest.d77130ad6f98eb7269c9af64650b6330.js",
+    "service-worker.js": "rubenverster.github.io/CookieCrumbleNews/service-worker.js",
+    "static/css/2.d2104beb.chunk.css.map": "rubenverster.github.io/CookieCrumbleNews/static/css/2.d2104beb.chunk.css.map",
+    "static/css/main.74f2fdb6.chunk.css.map": "rubenverster.github.io/CookieCrumbleNews/static/css/main.74f2fdb6.chunk.css.map",
+    "static/media/App.css": "rubenverster.github.io/CookieCrumbleNews/static/media/background.1b9c5db8.jpg",
+    "static/media/font-awesome.min.css": "rubenverster.github.io/CookieCrumbleNews/static/media/fontawesome-webfont.fee66e71.woff"
   }
 }
