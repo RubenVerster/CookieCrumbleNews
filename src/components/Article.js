@@ -50,6 +50,7 @@ const Article = ({ articles }) => {
                             href={url}
                             className="btn btn-primary btn-lg m-3"
                             target="_blank"
+                            rel="noopener noreferrer"
                           >
                             Sound Interesting?
                           </a>
@@ -71,7 +72,7 @@ const Article = ({ articles }) => {
     }
   };
 
-  return <div>{rendernewsArticles()}</div>;
+  return <div className="mb-4">{rendernewsArticles()}</div>;
 };
 
 export default Article;

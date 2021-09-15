@@ -4,6 +4,7 @@ import Article from './components/Article';
 import Header from './components/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
+import Footer from './components/Footer';
 
 require('dotenv').config();
 const { REACT_APP_ACCESS_KEY } = process.env;
@@ -18,7 +19,7 @@ const App = () => {
       await setNewsArticles(res.data.articles);
     } catch (error) {
       alert(
-        `Error retrieving data. API calls might have been reached for the time ¯\_(ツ)_/¯`
+        `Error retrieving data. API calls might have been reached for the time`
       );
     }
   };
@@ -31,6 +32,7 @@ const App = () => {
     <>
       <Header />
       <Article articles={newsArticles} />
+      <Footer />
     </>
   );
 };
