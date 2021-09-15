@@ -22,7 +22,7 @@ const Article = ({ articles }) => {
       const renderedArticles = articles.map(
         ({ title, url, urlToImage, description, publishedAt }) => {
           return (
-            <div class="container">
+            <div key={url} className="container">
               <br />
               <div className="card text-center border border-danger">
                 <div className="card-header">
@@ -30,17 +30,20 @@ const Article = ({ articles }) => {
                 </div>
                 <div className="card-body">
                   <div className="container">
-                    <div className="row ">
+                    <div className="row">
                       <div className="col-sm-12 col-md-6">
                         <img
-                          className="img-thumbnail"
-                          srcset={urlToImage}
-                          alt="News Image"
+                          className="img-thumbnail img-responsive"
+                          srcSet={urlToImage}
+                          alt="No Image Could Be Loaded"
                         />
                       </div>
                       <div className="col-sm-12 col-md-6 d-flex align-items-center justify-content-center">
                         <div>
-                          <p className="card-text m-3">{description}</p>
+                          <p
+                            className="card-text m-3"
+                            dangerouslySetInnerHTML={{ __html: description }}
+                          ></p>
                           <a
                             href={url}
                             className="btn btn-danger btn-lg m-3"
@@ -53,7 +56,7 @@ const Article = ({ articles }) => {
                     </div>
                   </div>
                 </div>
-                <div class="card-footer text-muted text-right">
+                <div className="card-footer text-muted text-right">
                   Fresh In On: <span>{publishedAt.substr(0, 10)}</span>
                 </div>
               </div>
@@ -66,7 +69,7 @@ const Article = ({ articles }) => {
     }
   };
 
-  return <>{rendernewsArticles()}</>;
+  return <div>{rendernewsArticles()}</div>;
 };
 
 export default Article;

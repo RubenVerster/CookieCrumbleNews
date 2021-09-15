@@ -7,7 +7,7 @@ import axios from 'axios';
 
 require('dotenv').config();
 const { REACT_APP_ACCESS_KEY } = process.env;
-const BASE_URL = `https://newsapi.org/v2/everything?q=keyword&apiKey=635dc97f5aea4deb9fff1c757fe7d36c`;
+const BASE_URL = `https://newsapi.org/v2/everything?q=keyword&apiKey=${REACT_APP_ACCESS_KEY}`;
 
 const App = () => {
   const [newsArticles, setNewsArticles] = useState(null);
@@ -15,8 +15,6 @@ const App = () => {
   const retrieveArticles = async () => {
     try {
       const res = await axios.get(BASE_URL);
-      console.log(res.data.articles);
-
       await setNewsArticles(res.data.articles);
     } catch (error) {
       alert(
@@ -32,7 +30,6 @@ const App = () => {
   return (
     <>
       <Header />
-
       <Article articles={newsArticles} />
     </>
   );
