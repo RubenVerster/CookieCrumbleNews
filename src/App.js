@@ -3,6 +3,7 @@ import './App.css';
 import Article from './components/Article';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Pagination from './components/Pagination';
 import axios from 'axios';
 
 require('dotenv').config();
@@ -11,6 +12,9 @@ const BASE_URL = `https://newsapi.org/v2/everything?q=keyword&apiKey=${REACT_APP
 
 const App = () => {
   const [newsArticles, setNewsArticles] = useState([]);
+
+  const [currentPage, setCurrentPage] = useState(1);
+  const [articlesPerPage, setArticlesPerPage] = useState(4);
 
   const retrieveArticles = async () => {
     try {
@@ -27,10 +31,23 @@ const App = () => {
     retrieveArticles();
   }, []);
 
+  const indexOfLastArticle = currentPage * articlesPerPage;
+  const indexOfFirstArticle = indexOfLastArticle - articlesPerPage;
+  const currentArticles = newsArticles.slice(
+    indexOfFirstArticle,
+    indexOfLastArticle
+  );
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
   return (
     <>
       <Header />
-      <Article articles={newsArticles} />
+      <Article articles={currentArticles} />
+      <Pagination
+        articlesPerPage={articlesPerPage}
+        totalArticles={newsArticles.length}
+        paginate={paginate}
+      />
       <Footer />
     </>
   );

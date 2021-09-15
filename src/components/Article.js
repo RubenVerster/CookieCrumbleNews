@@ -73,7 +73,7 @@ const Article = ({ articles }) => {
     }
   };
 
-  return <div className="mb-4 mt-4">{rendernewsArticles()}</div>;
+  return <div className="mb-5 mt-4">{rendernewsArticles()}</div>;
 };
 
 export default Article;
