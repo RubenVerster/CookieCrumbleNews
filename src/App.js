@@ -1,30 +1,40 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import Article from './components/Article';
 import Header from './components/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import axios from 'axios';
+import Footer from './components/Footer';
 
-class App extends React.Component {
-  state = { articles: null };
+require('dotenv').config();
+const { REACT_APP_ACCESS_KEY } = process.env;
+const BASE_URL = `https://newsapi.org/v2/everything?q=keyword&apiKey=${REACT_APP_ACCESS_KEY}`;
 
-  componentDidMount() {
-    let url = `${'https://newsapi.org/v2/top-headlines?'}${'country=us&'}${'apiKey=f606d10b0ef84c3e881776d8654b19e8'}`;
+const App = () => {
+  const [newsArticles, setNewsArticles] = useState(null);
 
-    let req = new Request(url);
-    fetch(req).then(async response => {
-      const resp = await response.json();
-      console.log(resp.articles);
-      this.setState({ articles: resp });
-    });
-  }
-  render() {
-    return (
-      <div>
-        <Header />
-        <Article articles={this.state.articles} />
-      </div>
-    );
-  }
-}
+  const retrieveArticles = async () => {
+    try {
+      const res = await axios.get(BASE_URL);
+      await setNewsArticles(res.data.articles);
+    } catch (error) {
+      alert(
+        `Error retrieving data. API calls might have been reached for the time`
+      );
+    }
+  };
+
+  useEffect(() => {
+    retrieveArticles();
+  }, []);
+
+  return (
+    <>
+      <Header />
+      <Article articles={newsArticles} />
+      <Footer />
+    </>
+  );
+};
 
 export default App;
