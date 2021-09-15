@@ -1,6 +1,5 @@
 import React from 'react';
 import PacmanLoader from 'react-spinners/PacmanLoader';
-import Pagination from 'react-js-pagination';
 
 const Article = ({ articles }) => {
   const rendernewsArticles = () => {
@@ -12,8 +11,10 @@ const Article = ({ articles }) => {
           </h3>
           <div
             style={{
-              transform: 'rotate(-90deg)',
-              margin: '0 auto',
+              position: 'absolute',
+              top: '50%',
+              left: '50%',
+              transform: 'rotate(-90deg) translate(-50%,-50%)',
             }}
           >
             <PacmanLoader size={42} color="#007BFF" />
@@ -72,7 +73,7 @@ const Article = ({ articles }) => {
     }
   };
 
-  return <div className="mb-4">{rendernewsArticles()}</div>;
+  return <div className="mb-4 mt-4">{rendernewsArticles()}</div>;
 };
 
 export default Article;
