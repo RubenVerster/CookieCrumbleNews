@@ -18,3 +18,9 @@ Please Note!
 This app does not allow requests over https with the free account
 
 You can only do requests from localhost
+
+---
+
+PS
+
+I wrote this at 01:43 in the morning after drinking and smoking the whole night XP
