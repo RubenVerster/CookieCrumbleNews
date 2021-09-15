@@ -5,7 +5,7 @@ import { faCookieBite } from '@fortawesome/free-solid-svg-icons';
 class Header extends React.Component {
   render() {
     return (
-      <div className="sticky-top bg-danger text-white text-center p-3">
+      <div className="sticky-top bg-primary text-white text-center p-3">
         <h1>
           <FontAwesomeIcon icon={faCookieBite} />
           ookie Crumble

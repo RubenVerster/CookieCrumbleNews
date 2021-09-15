@@ -7,14 +7,16 @@ const Article = ({ articles }) => {
     if (articles == null || articles.length < 1) {
       return (
         <div className="container">
-          <h3 className="mt-5 text-center text-danger">Loading Your News...</h3>
+          <h3 className="mt-5 text-center text-primary">
+            Loading Your News...
+          </h3>
           <div
             style={{
               transform: 'rotate(-90deg)',
               margin: '0 auto',
             }}
           >
-            <PacmanLoader size={42} color="#DC3545" />
+            <PacmanLoader size={42} color="#007BFF" />
           </div>
         </div>
       );
@@ -24,7 +26,7 @@ const Article = ({ articles }) => {
           return (
             <div key={url} className="container">
               <br />
-              <div className="card text-center border border-danger">
+              <div className="card text-center border border-primary">
                 <div className="card-header">
                   <h3>{title}</h3>
                 </div>
@@ -46,7 +48,7 @@ const Article = ({ articles }) => {
                           ></p>
                           <a
                             href={url}
-                            className="btn btn-danger btn-lg m-3"
+                            className="btn btn-primary btn-lg m-3"
                             target="_blank"
                           >
                             Sound Interesting?
