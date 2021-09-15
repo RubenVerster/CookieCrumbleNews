@@ -5,7 +5,7 @@ Make sure you acquire an API key from https://newsapi.org/
 After acquiring the API key, create a .env file in the root directory and paste your API key after the REACT_APP_API_KEY=
 
 example of what your .env file should look like:
-REACT_APP_API_KEY=0123456789abcdefghijklmnopqrstuvwxyz
+REACT_APP_ACCESS_KEY=0123456789abcdefghijklmnopqrstuvwxyz
 
 run the app locally with 'npm run start'
 
