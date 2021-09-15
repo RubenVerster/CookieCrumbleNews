@@ -11,6 +11,10 @@ run the app locally with 'npm run start'
 
 this will create a local instance of the app on your machine
 
+---
+
 Please Note!
+
 This app does not allow requests over https with the free account
+
 You can only do requests from localhost
